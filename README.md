@@ -1,4 +1,4 @@
-# AWS_Autohome
+# AWS Autohome
 Author: ***Hsien-wen "Steven" Deng***\
 This is a Serverless solution of home automation with deifferent types of IoT devices implemented in Amazon Web Services (AWS). 
 **Template**: The template includes a system of AWS services allows you to establish this application.\
@@ -28,8 +28,9 @@ This is a Serverless solution of home automation with deifferent types of IoT de
 ## Build-up Application
 1. From AWS Console go to **CloudFormation**
 2. Click **Create stack**
-3. Select **Upload a template file** and upload *CV_Surveillance_Template.json*
+3. Select **Upload a template file** and upload *Autohome_Template.json*
 4. Input a name and click **Create stack**
+   *Check you AWS region to be US-EAST-1 (N. Virginia)*
 
 ## Test Application
 1. Install boto3: `python -m pip install boto3`
