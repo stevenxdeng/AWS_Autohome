@@ -31,13 +31,12 @@ This is a Serverless solution of home automation with deifferent types of IoT de
 3. Select **Upload a template file** and upload *Autohome_Template.json*
 4. Input a name and click **Create stack**\
    *Check you AWS region to be US-EAST-1 (N. Virginia)*
-<pre>
 ## Test Application
 1. Install boto3: `python -m pip install boto3`
 2. Run *Autohome_Client.py*: `python Autohome_Client.py`(Linux / OS X)\
-                             `py Autohome_Client.py`(Windows)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`py Autohome_Client.py`(Windows)\
 *If errors show up, check names of resources (DynamoDB, Kinesis)*
-</pre>
+
 ## Destroy Application
 1. From AWS Console go to **CloudFormation**
 2. Choose target stack
