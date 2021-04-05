@@ -4,6 +4,9 @@ This is a Serverless solution of home automation with deifferent types of IoT de
 **Template**: The template includes a system of AWS services allows you to establish this application.\
 **Test Program**: The test program is a Python script running in the client to test the availability of your cloud application. 
 
+## Introduction
+![alt text](https://github.com/stevenxdeng/AWS_Autohome/Autohome_Architecture.png?raw=true)
+
 ## Prerequisite
 1. [Python 3.8](https://www.python.org/downloads/)
 2. Python IDE, recommend [Pyzo](https://pyzo.org/start.html)
