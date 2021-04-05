@@ -1,11 +1,13 @@
 # AWS Autohome
 Author: ***Hsien-wen "Steven" Deng***\
-This is a Serverless solution of home automation with deifferent types of IoT devices implemented in Amazon Web Services (AWS). 
-**Template**: The template includes a system of AWS services allows you to establish this application.\
-**Test Program**: The test program is a Python script running in the client to test the availability of your cloud application. 
 
 ## Introduction
-![alt text](https://github.com/stevenxdeng/AWS_Autohome/blob/main/Autohome_Architecture.png?raw=true)
+This is a Serverless solution of home automation with different types of IoT devices implemented in Amazon Web Services (AWS). In this case, two type of IoT devices are tested in this application, *light* and *Thermostat*. Users can interact with these devices through a client program.\
+**Template**: The template includes a system of AWS services allows you to establish this application.\
+**Client Program**: The client program is a Python script running to test the availability of your cloud application and interact with IoT devices. \
+
+![alt text](https://github.com/stevenxdeng/AWS_Autohome/blob/main/Autohome_Architecture.png?raw=true)\
+Figure 1. Architecture review of Autohome
 
 ## Prerequisite
 1. [Python 3.8](https://www.python.org/downloads/)
