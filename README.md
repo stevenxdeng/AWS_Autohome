@@ -42,7 +42,9 @@ Figure 1. Architecture review of Autohome
 1. Install boto3: `python -m pip install boto3`
 2. Run *Autohome_Client.py*: `python Autohome_Client.py`(Linux / OS X)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`py Autohome_Client.py`(Windows)\
-*If errors show up, check names of resources (DynamoDB, Kinesis)*
+3. Check the changes you applied
+    1) Through **Client Program**: Select *4) See Device Database* or *5) See Event Database*
+    2) Through **AWS**: You can use both *DynamoDB* and *IoT Core*
 
 ## Destroy Application
 1. From AWS Console go to **CloudFormation**
