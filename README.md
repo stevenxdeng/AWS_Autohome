@@ -2,7 +2,7 @@
 Author: ***Hsien-wen "Steven" Deng***
 
 ## Introduction
-&nbsp;&nbsp;&nbsp;&nbsp;This is a Serverless solution of home automation with different types of IoT devices implemented in Amazon Web Services (AWS). In this case, two type of IoT devices are tested in this application, *light* and *Thermostat*. Users can interact with these devices through a client program. User can add, remove or switch a light, and set temperature for a thermostat.
+&nbsp;&nbsp;&nbsp;&nbsp;This is a Serverless solution of home automation with different types of IoT devices implemented in Amazon Web Services (AWS). In this case, two type of IoT devices are tested in this application, *light* and *Thermostat*. Users can interact with these devices through a client program. User can add, remove or switch a light, and set temperature for a thermostat.\
 &nbsp;&nbsp;&nbsp;&nbsp;All the actions are taken place in AWS with a serverless architecture. As figure 1 shows, two DynamoDB databases (i.e. Device Database, Event Database) are deployed for devices and events. After the user making an action, the client program will deliver a message through Kinesis Data Stream (KDS) and trigger the Autohome Function. The Autohome function then updates both Device Database and Event Database, and publish a message using MQTT through AWS IoT Core. Devices subscribe to this MQTT topic can then act based on the message. In this case, there are no physical devices deployed, all the presentations only cover client side and cloud side. Nevertheless, physical devices connections are still possible as future extensions.\
 \
 There are two major components in this branch to help you build up Autohome:\
