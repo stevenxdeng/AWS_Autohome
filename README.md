@@ -41,16 +41,16 @@ Figure 1. Architecture review of Autohome
 ## Test Application
 1. Install boto3: `python -m pip install boto3`
 2. Run *Autohome_Client.py*: `python Autohome_Client.py`(Linux / OS X)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`py Autohome_Client.py`(Windows)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`py Autohome_Client.py`(Windows)
 3. Check the changes you applied
     1) Through **Client Program**: Select *4) See Device Database* or *5) See Event Database*
     2) Through **AWS**: You can use both *DynamoDB* and *IoT Core*
-        1. **DynamoDB**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**DynamoDB**
             1. From AWS Console go to **DynamoDB**
             2. Select **Tables**
             3. Enter **Autohome_collection**(*Device Database*) or **Autohome_logs**(*Event Database*)
             4. Select **items** to find applied changes
-        2. **IoT Core**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**IoT Core**
             1. From AWS Console go to **IoT Core**
             2. Select **Test** then choose **MQTT test client**
             3. Select **Subscribe to a topic**
