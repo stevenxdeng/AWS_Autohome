@@ -50,7 +50,7 @@ Figure 1. Architecture review of Autohome
             2. Select **Tables**
             3. Enter **Autohome_collection**(*Device Database*) or **Autohome_logs**(*Event Database*)
             4. Select **items** to find applied changes
-        2.**IoT Core**
+        2. **IoT Core**
             1. From AWS Console go to **IoT Core**
             2. Select **Test** then choose **MQTT test client**
             3. Select **Subscribe to a topic**
