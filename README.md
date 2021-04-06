@@ -49,4 +49,5 @@ Figure 1. Architecture review of Autohome
 2. Choose target stack
 3. Delete target stack
 
-## [License](https://github.com/stevenxdeng/AWS_Autohome/blob/main/LICENSE)
+## License
+**[MIT](https://github.com/stevenxdeng/AWS_Autohome/blob/main/LICENSE)
