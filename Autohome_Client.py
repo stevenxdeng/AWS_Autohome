@@ -82,6 +82,17 @@ def Table_scan():
     print('----------------------------------------')
     return (IDs,status)
 
+#Scan Device Database without print
+def Local_update():
+    IDs = []
+    status = {}
+    items = Autohome_collection_Table.scan()['Items']
+    for item in items:
+        IDs.append(item['Component_ID'])
+        if item['Component_ID'][0] == 'L':
+            status[item['Component_ID']]=item['Status']
+    return (IDs,status)
+
 #Scan Event Database
 def Log_scan():
     time_stamp = []
@@ -132,9 +143,10 @@ def set_temperature(component_ID,temperature):
     record = str(component_ID) + ',1,' + str(temperature) + ',SET'
     kinesis_upload(record)
 
-IDs,L_status = Table_scan()#Start program with a device database scan
+IDs,L_status = Table_scan()#Start with a scan
 
 while flag:
+    IDs,L_status = Local_update()
     x = input('\nActions\n1)Add/Remove Light 2)Switch light 3)Set Temperatue 4)See Device Database 5)See Event Database x)Exit\nEnter action:')
     if x == 'x':#Exit
         flag = False
@@ -153,6 +165,7 @@ while flag:
             if z[0] == 'L' and len(z) > 1:
                 print('Add light ', z)
                 add_light(z)
+                time.sleep(2)
         elif y == '2':#Remove a device
             z = input('\nLight ID to remove (x for back):')
             #Exclude inproper input
@@ -164,6 +177,7 @@ while flag:
             if z[0] == 'L' and z in IDs:
                 print('Remove light ', z)
                 remove_light(z)
+                time.sleep(2)
         else:
             pass
 
@@ -180,9 +194,11 @@ while flag:
             if L_status[y] == True:
                 print('Turn off light ', y)
                 off_light(y)
+                time.sleep(2)
             else:
                 print('Turn on light ', y)
                 on_light(y)
+                time.sleep(2)
 
     elif x == '3':#Set a temperature
         y = input('\nThermostat to set x)back\nEnter action:')
@@ -198,6 +214,7 @@ while flag:
                 z = input('Illegal temperature\nSet temperature: ')
             print('Set thermostat ', y, ': ', z, 'F')
             set_temperature(y,z)
+            time.sleep(2)
     elif x == '4':#Get Device Database
         IDs,L_status = Table_scan()
     elif x == '5':#Get Event Database
