@@ -45,11 +45,17 @@ Figure 1. Architecture review of Autohome
 3. Check the changes you applied
     1) Through **Client Program**: Select *4) See Device Database* or *5) See Event Database*
     2) Through **AWS**: You can use both *DynamoDB* and *IoT Core*
-        1. DynamoDB
+        1. **DynamoDB**
             1. From AWS Console go to **DynamoDB**
             2. Select **Tables**
             3. Enter **Autohome_collection**(*Device Database*) or **Autohome_logs**(*Event Database*)
             4. Select **items** to find applied changes
+        2. **IoT Core**
+            1. From AWS Console go to **IoT Core**
+            2. Select **Test** then choose **MQTT test client**
+            3. Select **Subscribe to a topic**
+            4. In *Topic filter*, input `autohome/topic`
+            5. Click the **Subsribe** button
 ## Destroy Application
 1. From AWS Console go to **CloudFormation**
 2. Choose target stack
