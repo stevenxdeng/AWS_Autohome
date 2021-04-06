@@ -55,7 +55,7 @@ Figure 1. Architecture review of Autohome
             1. From AWS Console go to **IoT Core**
             2. Select **Test** then choose **MQTT test client**
             3. Select **Subscribe to a topic**
-            4. In *Topic filter*, input `autohome/topic`
+            4. In *Topic filter*, input `/autohome/topic`
             5. Click the **Subsribe** button
 ## Destroy Application
 1. From AWS Console go to **CloudFormation**
