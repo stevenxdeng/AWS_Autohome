@@ -1,5 +1,6 @@
 # AWS Autohome
-Author: ***Hsien-wen "Steven" Deng***
+Author: ***Hsien-wen "Steven" Deng***\
+See my demo video [here](https://youtu.be/N7h2CPD9Ebs)
 
 ## Introduction
 &nbsp;&nbsp;&nbsp;&nbsp;This is a Serverless solution of home automation with different types of IoT devices implemented in Amazon Web Services (AWS). In this case, two type of IoT devices are tested in this application, *light* and *Thermostat*. Users can interact with these devices through a client program. User can add, remove or switch a light, and set temperature for a thermostat.\
