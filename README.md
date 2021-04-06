@@ -27,7 +27,7 @@ Figure 1. Architecture review of Autohome
 4. AWS CLI
    1) Download [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.htm) and install 
    2) Open CMD (Windows) or Terminal (Linux): `aws configure`
-   3) Input **access key ID** and **secret access key** copied from 4
+   3) Input **access key ID** and **secret access key** copied from 3
    4) Configure region (default "us-east-1")
    5) Configure output (default "json")\
 *For more details, please check: [AWS CLI Configuration Guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)*
@@ -48,7 +48,7 @@ Figure 1. Architecture review of Autohome
         1. **DynamoDB**
             1. From AWS Console go to **DynamoDB**
             2. Select **Tables**
-            3. Enter **Autohome_collection**(*Device Database*) or **Autohome_logs**(*Event Database*)
+            3. Enter **Autohome_collection** (*Device Database*) or **Autohome_logs** (*Event Database*)
             4. Select **items** to find applied changes
         2. **IoT Core**
             1. From AWS Console go to **IoT Core**
